@@ -1,0 +1,24 @@
+body{
+    background-image: url('../assets/images/cat-landscape.jpeg');
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+}
+h1{
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+}
+h2 {
+    color: white;
+    font-size: 25px
+}
+p{
+    margin-left: 50px;
+    color: rgb(235,227,7);
+    font-size: 24px;
+}
