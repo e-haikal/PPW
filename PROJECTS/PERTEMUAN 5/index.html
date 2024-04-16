@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout dan CSS</title>
+    <link rel="stylesheet" href="stylelayout.css">
+</head>
+<body>
+    <!-- Membuat kotak header -->
+    <div class="header">
+        <h1>Halo Ini Website Pertamaku</h1>
+        <h4>Praktikum Pertemuan 4 - CSS Layout</h4>
+    </div>
+
+    <!-- membuat kotak navigasi dan style link dari navigasi -->
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Produk</a>
+        <a href="#">Contact Us</a>
+        <a href="#" style="float: right">Login</a>
+    </div>
+
+    <!-- membagi halaman menjadi 3 bagian berisi left colum, middle column, right column -->
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Your link</h2>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="middlecolumn">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, 31 March, 2022</h5>
+                <div class="fakeimg" style="height: 100px;">Image</div>
+                <p>Some text...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed gravida orci vel tellus pharetra gravida. 
+                    Vestibulum vel cursus risus. Nam molestie vulputate dictum. 
+                    Cras at tristique quam, et ullamcorper mi</p>
+            </div>
+            <div class="row">
+                <div class="gallery">
+                    <a target="_blank" href="picture/cat">
+                        <img src="picture/cat.jpg" alt="Cinque Cat" width="600" height="400">
+                    </a>
+                    <div class="desc">Add description of the image here</div>
+                </div>
+                <div class="gallery">
+                    <a target="_blank" href="picture/cat.jpg">
+                        <img src="picture/cat.jpg" alt="cinque dog" width="600" height="400">
+                    </a>
+                    <div class="desc">Add description of the image here</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Abou Me</h2>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida orci vel tellus pharetra gravida. Vestibulum vel cursus risus. Nam molestie vulputate dictum. Cras at tristique quam, et ullamcorper mi. Maecenas laoreet nisi nec sem porta, eu lacinia nibh condimentum. 
+                    Integer non cursus libero, id blandit nunc. 
+                    Donec sed ligula quis mauris laoreet porttitor.</P>
+            </div>
+        </div>
+    </div>
+    
+    <!-- membuat kotak berisi teks -->
+    <div class="kotak">Kotak ini merupakan Box Model, yang diatur 
+        outer, margin, border, padding, dan contennya.
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
