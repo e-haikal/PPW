@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tuntas Digital - Tempat Berbagi Informasi</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        .header_judul {
+            text-align: center;
+        }
+
+        .card-body {
+            margin-top: 50px;
+        }
+
+        .tabel-area {
+            margin: 30px 30px;
+        }
+
+        .table-responsive {
+            margin: 30px 30px;
+        }
+
+        .table-head-row {
+            background-color: black;
+        }
+
+        .teks-footer {
+            margin: 30px;
+        }
+
+        .alamat-billing {
+            margin: 40px;
+        }
+
+        .pembayaran {
+            margin: 40px;
+        }
+
+        .proses {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_judul" style="margin: 20px 40px;">
+            <h1>Bootstrap</h1>
+        </div>
+    </header>
+
+    <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title">Table dan Form pada Bootstrap</h5>
+            <p class="card-text">Halaman ini dibuat untuk menampilkan tabel dan formulir yang dibuat dengan komponen-komponen Bootstrap.</p>
+            <a href="index.html" class="btn btn-primary">Kembali ke Tabel Sebelumnya</a>
+        </div>
+    </div>
+
+    <div class="alamat-billing">
+        <h3>Alamat Billing</h3>
+
+        <form class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="namaDepan" class="form-label">Nama depan</label>
+                <input type="text" class="form-control" id="namaDepan" required>
+                <div class="invalid-feedback">
+                    Nama depan diperlukan.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" required>
+                <div class="invalid-feedback">
+                    Username diperlukan.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                    Email diperlukan.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="alamat" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="alamat" required>
+                <div class="invalid-feedback">
+                    Alamat diperlukan.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="kota" class="form-label">Kota/Kabupaten</label>
+                <input type="text" class="form-control" id="kota" required>
+                <div class="invalid-feedback">
+                    Kota/Kabupaten diperlukan.
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="alamatSama">
+                <label class="form-check-label" for="alamatSama">Alamat pengiriman sama dengan alamat billing.</label>
+                <br />
+                <input type="checkbox" class="form-check-input" id="simpanInfo">
+                <label class="form-check-label" for="simpanInfo">Simpan Informasi ini untuk selanjutnya.</label>
+            </div>
+
+            <div class="pembayaran">
+                <h3>Pembayaran</h3>
+                <div class="mb-3 form-check">
+                    <input type="radio" class="form-check-input" id="kartuKredit" name="pembayaran" required>
+                    <label class="form-check-label" for="kartuKredit">Kartu Kredit</label>
+                    <br />
+                    <input type="radio" class="form-check-input" id="kartuDebit" name="pembayaran" required>
+                    <label class="form-check-label" for="kartuDebit">Kartu Debit</label>
+                    <br />
+                    <input type="radio" class="form-check-input" id="paypal" name="pembayaran" required>
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+
+                <div class="mb-3">
+                    <label for="namaPemilikKartu" class="form-label">Nama pemilik kartu</label>
+                    <input type="text" class="form-control" id="namaPemilikKartu" required>
+                    <div class="invalid-feedback">
+                        Nama pemilik kartu diperlukan.
+                    </div>
+                </div>
+            </div>
+
+            <div class="proses">
+                <button type="submit" class="btn btn-primary">Proses Pembayaran</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="teks-footer">
+            <p>© 2024 - Praktikum 11 - Pengenalan Perancangan Web | Asman Haikal - 23.22.2510</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="checkout.js"></script>
+</body>
+
+</html>
